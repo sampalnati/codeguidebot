@@ -1,0 +1,30 @@
+{
+  "name": "Main System",
+  "description": "Handles the overall application logic.",
+  "children": [
+    {
+      "name": "auth",
+      "description": "Manages user login, registration, and session control.",
+      "children": [
+        {
+          "name": "login_user",
+          "description": "Authenticates a user with their username and password. Returns session token if successful."
+        },
+        {
+          "name": "register_user",
+          "description": "Creates a new user account with email, username, and password."
+        }
+      ]
+    },
+    {
+      "name": "checkout",
+      "description": "Handles the purchase process including payment and confirmation.",
+      "children": [
+        {
+          "name": "process_payment",
+          "description": "Takes payment details and interacts with payment API to complete transaction."
+        }
+      ]
+    }
+  ]
+}
