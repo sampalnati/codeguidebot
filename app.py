@@ -7,7 +7,7 @@ from analyze_repo import clone_repo, analyze_codebase
 # Configure Groq OpenAI-compatible client
 client = openai.OpenAI(
     base_url="https://api.groq.com/openai/v1",
-    api_key="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"
+    api_key="Your api code here"
 )
 
 # Streamlit UI setup
